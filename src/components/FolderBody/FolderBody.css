@@ -1,0 +1,36 @@
+.folder-body {
+  display: flex;
+  height: 100%;
+  background: white;
+}
+
+.folder-sidebar {
+  width: 270px;
+}
+
+.folder-large-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.folder-sidebar h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.rainbow-line {
+  width: 250px;
+  height: 1px;
+  margin: 4px 0 28px;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue);
+}
+
+.folder-sidebar p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.folder-content {
+  flex: 1;
+  padding: 20px;
+}

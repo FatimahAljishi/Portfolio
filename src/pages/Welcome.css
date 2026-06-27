@@ -1,0 +1,43 @@
+.welcome-window {
+  padding: 28px 36px;
+  font-family: "Courier New", monospace;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.welcome-window p {
+  margin: 0 0 10px;
+}
+
+.welcome-window h1 {
+  margin: 4px 0 8px;
+  color: #000080;
+  font-size: 56px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.role {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.welcome-window ul {
+  margin: 8px 0 0 24px;
+  padding: 0;
+}
+
+.welcome-window li {
+  margin-bottom: 4px;
+}
+
+.terminal {
+  margin-top: 18px;
+  font-weight: bold;
+}

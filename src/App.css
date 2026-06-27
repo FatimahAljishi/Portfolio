@@ -1,0 +1,129 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #478687;
+  background-size: cover;
+  background-position: center;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.taskbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 29px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.start-button {
+  height: 23px;
+  padding: 0 10px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.desktop-icon {
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  width: 80px;
+  text-align: center;
+  cursor: default;
+  font-size: 12px;
+}
+
+.icon-box {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.icon-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.icon-label {
+  display: inline-block;
+}
+
+.window {
+  position: absolute;
+  top: 120px;
+  left: 180px;
+  width: 700px;
+  height: 500px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+
+.title-bar {
+  height: 24px;
+  background: #000080;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.title-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.small-icon {
+  width: 14px;
+  height: 14px;
+  background: white;
+  display: inline-block;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.window-buttons button {
+  width: 18px;
+  height: 18px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 0;
+}
+
+.window-body {
+  height: calc(100% - 24px);
+  background: #c0c0c0;
+}

@@ -1,0 +1,16 @@
+.about-window {
+  padding: 16px;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 13px;
+  color: black;
+}
+
+.about-window h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.role {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
