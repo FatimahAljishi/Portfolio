@@ -10,16 +10,26 @@ export default function Window({
   y,
   width,
   height,
+  maximized,
 }) {
   return (
     <div
       className="window"
-      style={{
-        left: `min(${x}px, calc(100vw - min(${width}px, calc(100vw - 40px)) - 20px))`,
-        top: `min(${y}px, calc(100vh - min(${height}px, calc(100vh - 80px)) - 60px))`,
-        width: `min(${width}px, calc(100vw - 40px))`,
-        height: `min(${height}px, calc(100vh - 80px))`,
-      }}
+      style={
+        maximized
+          ? {
+              left: 0,
+              top: 0,
+              width: "100%",
+              height: "calc(100vh - 28px)",
+            }
+          : {
+              left: `min(${x}px, calc(100vw - min(${width}px, calc(100vw - 40px)) - 20px))`,
+              top: `min(${y}px, calc(100vh - min(${height}px, calc(100vh - 80px)) - 60px))`,
+              width: `min(${width}px, calc(100vw - 40px))`,
+              height: `min(${height}px, calc(100vh - 80px))`,
+            }
+      }
     >
       <div className="title-bar">
         <div className="title-left">

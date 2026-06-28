@@ -9,6 +9,9 @@ import envelopeIcon from "../assets/envelope.png";
 import certificateIcon from "../assets/certificate.png";
 import textIcon from "../assets/text.png";
 import Welcome from "../pages/Welcome";
+import appIcon from "../assets/appwizard.png";
+import ProjectDetails from "../pages/ProjectDetails";
+import { projects } from "./projects.jsx";
 
 export const desktopItems = [
   {
@@ -21,6 +24,7 @@ export const desktopItems = [
     y: 50,
     width: 1000,
     height: 700,
+    maximized: false,
   },
   {
     id: "projects",
@@ -33,6 +37,7 @@ export const desktopItems = [
     y: 100,
     width: 700,
     height: 400,
+    maximized: false,
   },
   {
     id: "experience",
@@ -40,6 +45,7 @@ export const desktopItems = [
     icon: folderIcon,
     title: "Experience",
     component: Experience,
+    maximized: false,
   },
   {
     id: "resume",
@@ -47,6 +53,7 @@ export const desktopItems = [
     icon: pdfIcon,
     title: "Resume",
     component: About,
+    maximized: false,
   },
   {
     id: "skills",
@@ -54,6 +61,7 @@ export const desktopItems = [
     icon: controlPanelIcon,
     title: "Skills",
     component: About,
+    maximized: false,
   },
   {
     id: "contact",
@@ -61,6 +69,7 @@ export const desktopItems = [
     icon: envelopeIcon,
     title: "Contact",
     component: About,
+    maximized: false,
   },
   {
     id: "certificates",
@@ -68,6 +77,7 @@ export const desktopItems = [
     icon: certificateIcon,
     title: "Certificates",
     component: About,
+    maximized: false,
   },
   {
     id: "welcome",
@@ -77,5 +87,36 @@ export const desktopItems = [
     component: Welcome,
     x: 370,
     y: 50,
+    maximized: false,
+  },
+  {
+    id: "agromind",
+    label: "AgroMind.exe",
+    icon: appIcon,
+    title: "AgroMind",
+    component: ProjectDetails,
+    componentProps: {
+      project: projects.find((project) => project.id === "agromind"),
+    },
+    hiddenFromDesktop: true,
+    maximized: true,
+  },
+  {
+    id: "resumeEvaluator",
+    label: "Resume Evaluator.exe",
+    icon: appIcon,
+    title: "Resume Evaluator",
+    component: About,
+    hiddenFromDesktop: true,
+    maximized: false,
+  },
+  {
+    id: "portfolio",
+    label: "Portfolio.exe",
+    icon: appIcon,
+    title: "Portfolio",
+    component: About,
+    hiddenFromDesktop: true,
+    maximized: false,
   },
 ];

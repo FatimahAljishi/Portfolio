@@ -1,58 +1,31 @@
 import "./Projects.css";
-import folderOpenIcon from "../assets/folder-open.png";
-import folderIcon from "../assets/folder.png";
 import FolderBody from "../components/FolderBody/FolderBody";
+import folderOpenIcon from "../assets/folder-open.png";
+import { projectItems } from "../data/projectItems";
 
-export default function Projects() {
+export default function Projects({ openWindow }) {
   return (
-    <div className="projects-window">
-      <FolderBody
-        icon={folderOpenIcon}
-        title="My Projects"
-        content="Double-click on a project to view its details."
-      >
-        <div className="project-item">
-          <span className="project-folder">
+    <FolderBody
+      icon={folderOpenIcon}
+      title="My Projects"
+      content="Double-click on a project to view its details."
+    >
+      <div className="projects-window">
+        {projectItems.map((project) => (
+          <button
+            key={project.id}
+            className="project-icon"
+            onDoubleClick={() => openWindow(project.id)}
+          >
             <img
-              className="project-folder-icon"
-              src={folderIcon}
-              alt="Folder"
+              src={project.icon}
+              className="project-icon-image"
+              alt={project.label}
             />
-          </span>
-          <div>
-            <h3>AgroMind</h3>
-            <p>AI crop disease diagnosis and recommendation platform.</p>
-          </div>
-        </div>
-
-        <div className="project-item">
-          <span className="project-folder">
-            <img
-              className="project-folder-icon"
-              src={folderIcon}
-              alt="Folder"
-            />
-          </span>
-          <div>
-            <h3>Resume Evaluator</h3>
-            <p>AI-powered resume screening and feedback system.</p>
-          </div>
-        </div>
-
-        <div className="project-item">
-          <span className="project-folder">
-            <img
-              className="project-folder-icon"
-              src={folderIcon}
-              alt="Folder"
-            />
-          </span>
-          <div>
-            <h3>Portfolio</h3>
-            <p>Personal portfolio built as a Windows 98-style desktop.</p>
-          </div>
-        </div>
-      </FolderBody>
-    </div>
+            <span className="project-icon-label">{project.label}</span>
+          </button>
+        ))}
+      </div>
+    </FolderBody>
   );
 }

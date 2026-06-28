@@ -1,26 +1,25 @@
-.projects-window {
-  padding: 16px;
-  font-family: Tahoma, Arial, sans-serif;
-  font-size: 13px;
-}
-
-.project-item {
+.project-icon {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 18px;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  width: 100px;
 }
 
-.project-folder-icon {
+.project-icon-label {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.project-icon-image {
   width: 32px;
   height: 32px;
 }
 
-.project-item h3 {
-  margin: 0 0 4px;
-  font-size: 15px;
-}
-
-.project-item p {
-  margin: 0;
+.projects-window {
+  display: flex;
+  gap: 16px;
 }

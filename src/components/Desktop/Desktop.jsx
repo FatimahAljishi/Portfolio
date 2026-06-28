@@ -22,14 +22,16 @@ export default function Desktop() {
   return (
     <div className="wallpaper">
       <div className="desktop-icons">
-        {desktopItems.map((item) => (
-          <DesktopIcon
-            key={item.id}
-            icon={item.icon}
-            label={item.label}
-            onDoubleClick={() => openWindow(item.id)}
-          />
-        ))}
+        {desktopItems
+          .filter((item) => !item.hiddenFromDesktop)
+          .map((item) => (
+            <DesktopIcon
+              key={item.id}
+              icon={item.icon}
+              label={item.label}
+              onDoubleClick={() => openWindow(item.id)}
+            />
+          ))}
       </div>
 
       {openWindows.map((id) => {
@@ -50,8 +52,9 @@ export default function Desktop() {
             y={item.y}
             height={item.height}
             width={item.width}
+            maximized={item.maximized}
           >
-            <ActiveComponent />
+            <ActiveComponent openWindow={openWindow} {...item.componentProps} />
           </Window>
         );
       })}

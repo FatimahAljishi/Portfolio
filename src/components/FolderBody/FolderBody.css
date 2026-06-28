@@ -1,11 +1,8 @@
 .folder-body {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   height: 100%;
   background: white;
-}
-
-.folder-sidebar {
-  width: 270px;
 }
 
 .folder-large-icon {
@@ -20,7 +17,7 @@
 
 .rainbow-line {
   width: 250px;
-  height: 1px;
+  height: 0.5px;
   margin: 4px 0 28px;
   background: linear-gradient(to right, red, orange, yellow, green, cyan, blue);
 }
@@ -30,7 +27,6 @@
   margin: 0;
 }
 
-.folder-content {
-  flex: 1;
-  padding: 20px;
+.folder-sidebar {
+  padding: 18px;
 }
