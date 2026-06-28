@@ -11,6 +11,7 @@ export default function Window({
   width,
   height,
   maximized,
+  position,
 }) {
   return (
     <div
@@ -24,8 +25,16 @@ export default function Window({
               height: "calc(100vh - 28px)",
             }
           : {
-              left: `min(${x}px, calc(100vw - min(${width}px, calc(100vw - 40px)) - 20px))`,
-              top: `min(${y}px, calc(100vh - min(${height}px, calc(100vh - 80px)) - 60px))`,
+              left:
+                position === "center"
+                  ? `calc((100vw - min(${width}px, calc(100vw - 40px))) / 2)`
+                  : `min(${x}px, calc(100vw - min(${width}px, calc(100vw - 40px)) - 20px))`,
+
+              top:
+                position === "center"
+                  ? `calc((100vh - min(${height}px, calc(100vh - 80px))) / 2)`
+                  : `min(${y}px, calc(100vh - min(${height}px, calc(100vh - 80px)) - 60px))`,
+
               width: `min(${width}px, calc(100vw - 40px))`,
               height: `min(${height}px, calc(100vh - 80px))`,
             }

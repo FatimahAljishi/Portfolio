@@ -46,6 +46,8 @@ export const desktopItems = [
     title: "Experience",
     component: Experience,
     maximized: false,
+    x: 300,
+    y: 150,
   },
   {
     id: "resume",
@@ -54,6 +56,10 @@ export const desktopItems = [
     title: "Resume",
     component: About,
     maximized: false,
+    x: 350,
+    y: 200,
+    width: 800,
+    height: 600,
   },
   {
     id: "skills",
@@ -85,8 +91,9 @@ export const desktopItems = [
     icon: textIcon,
     title: "Welcome.txt",
     component: Welcome,
-    x: 370,
-    y: 50,
+    position: "center",
+    width: 700,
+    height: 500,
     maximized: false,
   },
   {

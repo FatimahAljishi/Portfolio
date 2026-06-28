@@ -53,6 +53,7 @@ export default function Desktop() {
             height={item.height}
             width={item.width}
             maximized={item.maximized}
+            position={item.position}
           >
             <ActiveComponent openWindow={openWindow} {...item.componentProps} />
           </Window>

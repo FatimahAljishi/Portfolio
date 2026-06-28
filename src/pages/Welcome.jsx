@@ -3,26 +3,25 @@ import "./Welcome.css";
 export default function Welcome() {
   return (
     <div className="welcome-window">
-      <p>Hi, I'm</p>
+      <p className="intro">Hi, I'm</p>
 
       <h1>Fatimah Aljishi</h1>
 
-      <span className="role">SOFTWARE ENGINEER</span>
+      <span className="role">FULL-STACK SOFTWARE ENGINEER</span>
 
-      <br />
-      <br />
+      <p className="welcome-text">Welcome to my interactive portfolio.</p>
 
-      <p>Welcome to my interactive portfolio.</p>
+      <p className="built-text">
+        This desktop was built with React and inspired by Windows 98.
+      </p>
 
-      <br />
+      <p className="instruction-text">
+        Double-click any desktop icon to begin exploring.
+      </p>
 
-      <p>Double-click the desktop icons to explore</p>
-
-      <br />
-
-      <p>Have fun exploring!</p>
-
-      <p className="terminal">C:\&gt; _</p>
+      <p className="system-ready">
+        System ready<span className="cursor">_</span>
+      </p>
     </div>
   );
 }
