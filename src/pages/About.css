@@ -1,16 +1,83 @@
-.about-window {
-  padding: 16px;
-  font-family: Tahoma, Arial, sans-serif;
-  font-size: 13px;
-  color: black;
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  padding: 24px;
+  height: 100%;
+  font-family: "Courier New", monospace;
+  color: #000;
+  overflow: auto;
 }
 
-.about-window h2 {
+.about-main {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.about-main .intro {
   margin: 0 0 6px;
-  font-size: 22px;
+  font-weight: bold;
 }
 
-.role {
+.about-main h1 {
+  margin: 0 0 8px;
+  color: #000080;
+  font-size: 52px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.role-badge {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 4px 8px;
+  background: #111;
+  color: white;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 16px;
+}
+
+.about-main p {
+  margin: 0 0 18px;
+}
+
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-box {
+  background: #c0c0c0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+
+.info-box h2 {
+  margin: 0;
+  padding: 5px 8px;
+  background: #000080;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 8px;
+  border-bottom: 1px dotted #808080;
+  font-size: 13px;
+}
+
+.info-row strong {
+  color: #000080;
+}
+
+.system-icons {
+  width: 18px;
+  height: 18px;
 }

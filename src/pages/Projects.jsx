@@ -6,7 +6,11 @@ import FolderBody from "../components/FolderBody/FolderBody";
 export default function Projects() {
   return (
     <div className="projects-window">
-      <FolderBody icon={folderOpenIcon} title="My Projects">
+      <FolderBody
+        icon={folderOpenIcon}
+        title="My Projects"
+        content="Double-click on a project to view its details."
+      >
         <div className="project-item">
           <span className="project-folder">
             <img

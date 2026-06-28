@@ -48,6 +48,8 @@ export default function Desktop() {
             footerItems={item.status}
             x={item.x}
             y={item.y}
+            height={item.height}
+            width={item.width}
           >
             <ActiveComponent />
           </Window>
