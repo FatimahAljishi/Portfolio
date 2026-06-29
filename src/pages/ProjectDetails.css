@@ -227,3 +227,27 @@ h2 {
 .resume-evaluator-theme .link-arrow {
   color: #1e4fbc;
 }
+
+.portfolio-theme .project-link {
+  border: 1px solid #a0a2a7;
+  background: linear-gradient(to right, #f9f9fa, #eceef0);
+  color: #86888e;
+}
+
+.portfolio-theme .project-link:hover {
+  background: linear-gradient(to right, #f2f3f4, #e3e5e8);
+  border-color: #86888e;
+}
+
+.portfolio-theme .tech-stack-list span {
+  background: linear-gradient(to right, #f9f9fa, #eceef0);
+  border: 1px solid #a0a2a7;
+}
+
+.portfolio-theme .header-text h1,
+.portfolio-theme .header-text p,
+.portfolio-theme h2,
+.portfolio-theme .feature-bullet,
+.portfolio-theme .link-arrow {
+  color: #86888e;
+}

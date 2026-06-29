@@ -125,8 +125,11 @@ export const desktopItems = [
     label: "Portfolio.exe",
     icon: appIcon,
     title: "Portfolio",
-    component: About,
+    component: ProjectDetails,
+    componentProps: {
+      project: projects.find((project) => project.id === "portfolio"),
+    },
     hiddenFromDesktop: true,
-    maximized: false,
+    maximized: true,
   },
 ];
