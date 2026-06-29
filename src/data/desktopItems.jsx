@@ -113,9 +113,12 @@ export const desktopItems = [
     label: "Resume Evaluator.exe",
     icon: appIcon,
     title: "Resume Evaluator",
-    component: About,
+    component: ProjectDetails,
+    componentProps: {
+      project: projects.find((project) => project.id === "resumeEvaluator"),
+    },
     hiddenFromDesktop: true,
-    maximized: false,
+    maximized: true,
   },
   {
     id: "portfolio",

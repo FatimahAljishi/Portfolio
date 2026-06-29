@@ -181,10 +181,10 @@ h2 {
 }
 
 .agromind-theme .header-text h1,
-.header-text p,
-h2,
-.feature-bullet,
-.link-arrow {
+.agromind-theme .header-text p,
+.agromind-theme h2,
+.agromind-theme .feature-bullet,
+.agromind-theme .link-arrow {
   color: #326e04;
 }
 
@@ -202,4 +202,28 @@ h2,
 .agromind-theme .tech-stack-list span {
   background: linear-gradient(to right, #f8fbf7, #eef6eb);
   border: 1px solid #7da27a;
+}
+
+.resume-evaluator-theme .project-link {
+  border: 1px solid #5b84d6;
+  background: linear-gradient(to right, #f8fbff, #edf4ff);
+  color: #1e4fbc;
+}
+
+.resume-evaluator-theme .project-link:hover {
+  background: linear-gradient(to right, #edf3ff, #dce8ff);
+  border-color: #1e4fbc;
+}
+
+.resume-evaluator-theme .tech-stack-list span {
+  background: linear-gradient(to right, #f8fbff, #edf4ff);
+  border: 1px solid #5b84d6;
+}
+
+.resume-evaluator-theme .header-text h1,
+.resume-evaluator-theme .header-text p,
+.resume-evaluator-theme h2,
+.resume-evaluator-theme .feature-bullet,
+.resume-evaluator-theme .link-arrow {
+  color: #1e4fbc;
 }
