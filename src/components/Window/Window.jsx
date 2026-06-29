@@ -53,7 +53,10 @@ export default function Window({
           </button>
         </div>
       </div>
-      <div className="window-body">{children}</div>
+      <div className="window-body">
+        {" "}
+        <div className="window-body-scroll">{children}</div>
+      </div>
       <div className="window-footer">
         {[0, 1, 2].map((index) => (
           <div className="status-box" key={index}>
