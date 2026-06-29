@@ -51,14 +51,21 @@ export default function ProjectDetails({ project }) {
           </div>
         </div>
         <div className="project-links">
-          <div className="github-link">
-            <img src={githubIcon} className="github-icon" />
-            <a href={project.github}>GitHub Repository</a>
-          </div>
-          <div className="live-demo-link">
-            <img src={project.liveDemoIcon} className="live-demo-icon" />
-            <a href={project.liveDemo}>Live Demo</a>
-          </div>
+          <a href={project.github} className="project-link" target="_blank">
+            <div className="link-left">
+              <img src={githubIcon} className="link-icon" />
+              <span>GitHub Repository</span>
+            </div>
+            <span className="link-arrow">›</span>
+          </a>
+
+          <a href={project.liveDemo} className="project-link" target="_blank">
+            <div className="link-left">
+              <img src={project.liveDemoIcon} className="link-icon" />
+              <span>Live Demo</span>
+            </div>
+            <span className="link-arrow">›</span>
+          </a>
         </div>
       </div>
     </div>

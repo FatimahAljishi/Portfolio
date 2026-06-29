@@ -121,14 +121,16 @@ h2 {
 .tech-stack-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 10px;
+  align-content: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .tech-stack-list span {
   padding: 6px 12px;
-  border: 1px solid #000;
   border-radius: 4px;
-  background-color: #f2f2f2;
   font-size: 16px;
 }
 
@@ -139,33 +141,65 @@ h2 {
   vertical-align: middle;
 }
 
-.project-links img {
-  width: 20px;
-  height: 20px;
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-content: center;
+  justify-content: center;
+  flex: 1;
 }
 
-.github-link,
-.live-demo-link {
+.project-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.15s ease;
+}
+
+.link-left {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 5px;
-  border-radius: 4px;
-  padding: 6px 12px;
+  gap: 14px;
+}
+
+.link-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.link-arrow {
+  font-size: 34px;
+  font-weight: normal;
 }
 
 .agromind-theme .header-text h1,
 .header-text p,
 h2,
-.feature-bullet {
+.feature-bullet,
+.link-arrow {
   color: #326e04;
 }
 
-.agromind-theme .project-links {
-  background-color: #e6f2e6;
+.agromind-theme .project-link {
+  border: 1px solid #7da27a;
+  background: linear-gradient(to right, #f8fbf7, #eef6eb);
+  color: #326e04;
 }
 
-.agromind-theme .github-link,
-.live-demo-link {
-  border: 1px solid #326e04;
+.agromind-theme .project-link:hover {
+  background: linear-gradient(to right, #edf8ea, #e2f1de);
+  border-color: #5b8758;
+}
+
+.agromind-theme .tech-stack-list span {
+  background: linear-gradient(to right, #f8fbf7, #eef6eb);
+  border: 1px solid #7da27a;
 }
