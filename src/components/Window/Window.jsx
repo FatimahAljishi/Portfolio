@@ -13,6 +13,8 @@ export default function Window({
   maximized,
   position,
 }) {
+  const availableWidth = "calc(100vw - 40px)";
+  const availableHeight = "calc(100vh - 40px)";
   return (
     <div
       className="window"
@@ -27,16 +29,16 @@ export default function Window({
           : {
               left:
                 position === "center"
-                  ? `calc((100vw - min(${width}px, calc(100vw - 40px))) / 2)`
-                  : `min(${x}px, calc(100vw - min(${width}px, calc(100vw - 40px)) - 20px))`,
+                  ? `calc((100vw - min(${width}px, ${availableWidth})) / 2)`
+                  : `min(${x}px, calc(100vw - min(${width}px, ${availableWidth}) - 20px))`,
 
               top:
                 position === "center"
-                  ? `calc((100vh - min(${height}px, calc(100vh - 80px))) / 2)`
-                  : `min(${y}px, calc(100vh - min(${height}px, calc(100vh - 80px)) - 60px))`,
+                  ? `calc((100vh - min(${height}px, ${availableHeight})) / 2)`
+                  : `min(${y}px, calc(100vh - min(${height}px, ${availableHeight}) - 20px))`,
 
-              width: `min(${width}px, 100vw)`,
-              height: `min(${height}px, calc(100vh - 28px))`,
+              width: `min(${width}px, ${availableWidth})`,
+              height: `min(${height}px, ${availableHeight})`,
             }
       }
     >
