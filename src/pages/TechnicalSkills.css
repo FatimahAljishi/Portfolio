@@ -1,0 +1,58 @@
+.technical-skills-window {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  font-family: "Courier New", monospace;
+}
+
+.technical-skill {
+  border-bottom: 2px solid #ccc;
+  display: inline-flex;
+  padding-bottom: 8px;
+  align-items: center;
+}
+
+.technical-skill span:first-child {
+  width: 180px;
+  font-weight: bold;
+}
+
+.technical-skill span:last-child {
+  flex: 1;
+}
+
+.technical-skills-header {
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  display: inline-flex;
+  padding-bottom: 8px;
+}
+
+.technical-skills-icon {
+  width: 45px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.technical-skill-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.technical-skill-label {
+  display: flex;
+  align-items: center;
+  color: #010885;
+}
+
+.technical-skills-footer {
+  display: flex;
+  background: #e3e3e2;
+  padding: 4px 10px;
+  border: #a5a5a4 1px solid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

@@ -14,6 +14,9 @@ import ProjectDetails from "../pages/ProjectDetails";
 import { projects } from "./projects.jsx";
 import ComingSoon from "../pages/ComingSoon";
 import Resume from "../pages/Resume";
+import Skills from "../pages/Skills";
+import TechnicalSkills from "../pages/TechnicalSkills";
+import skillIcon from "../assets/file_gears.png";
 
 export const desktopItems = [
   {
@@ -71,12 +74,13 @@ export const desktopItems = [
     label: "Skills",
     icon: controlPanelIcon,
     title: "Skills",
-    component: ComingSoon,
+    component: Skills,
     maximized: false,
     x: 300,
     y: 150,
     width: 800,
     height: 400,
+    status: ["3 Object(s)", "", ""],
   },
   {
     id: "contact",
@@ -148,5 +152,18 @@ export const desktopItems = [
     },
     hiddenFromDesktop: true,
     maximized: true,
+  },
+  {
+    id: "technicalSkills",
+    label: "Technical Skills",
+    icon: skillIcon,
+    title: "Technical Skills",
+    component: TechnicalSkills,
+    maximized: false,
+    x: 350,
+    y: 150,
+    width: 800,
+    height: 450,
+    hiddenFromDesktop: true,
   },
 ];
