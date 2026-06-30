@@ -18,6 +18,8 @@ import Skills from "../pages/Skills";
 import TechnicalSkills from "../pages/TechnicalSkills";
 import skillIcon from "../assets/file_gears.png";
 import SoftSkills from "../pages/SoftSkills";
+import Languages from "../pages/Languages";
+import languageIcon from "../assets/soundyel.png";
 
 export const desktopItems = [
   {
@@ -178,6 +180,19 @@ export const desktopItems = [
     y: 100,
     width: 500,
     height: 580,
+    hiddenFromDesktop: true,
+  },
+  {
+    id: "languages",
+    label: "Languages",
+    icon: languageIcon,
+    title: "Languages",
+    component: Languages,
+    maximized: false,
+    x: 350,
+    y: 150,
+    width: 800,
+    height: 340,
     hiddenFromDesktop: true,
   },
 ];
