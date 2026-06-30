@@ -22,7 +22,7 @@ export default function Window({
               left: 0,
               top: 0,
               width: "100%",
-              height: "calc(100vh - 28px)",
+              height: "100%",
             }
           : {
               left:
@@ -35,8 +35,8 @@ export default function Window({
                   ? `calc((100vh - min(${height}px, calc(100vh - 80px))) / 2)`
                   : `min(${y}px, calc(100vh - min(${height}px, calc(100vh - 80px)) - 60px))`,
 
-              width: `min(${width}px, calc(100vw - 40px))`,
-              height: `min(${height}px, calc(100vh - 80px))`,
+              width: `min(${width}px, 100vw)`,
+              height: `min(${height}px, calc(100vh - 28px))`,
             }
       }
     >

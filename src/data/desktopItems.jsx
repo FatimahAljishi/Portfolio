@@ -13,6 +13,7 @@ import appIcon from "../assets/appwizard.png";
 import ProjectDetails from "../pages/ProjectDetails";
 import { projects } from "./projects.jsx";
 import ComingSoon from "../pages/ComingSoon";
+import Resume from "../pages/Resume";
 
 export const desktopItems = [
   {
@@ -57,12 +58,13 @@ export const desktopItems = [
     label: "Resume.pdf",
     icon: pdfIcon,
     title: "Resume",
-    component: ComingSoon,
+    component: Resume,
     maximized: false,
-    x: 300,
-    y: 150,
+    x: 350,
+    y: 0,
     width: 800,
-    height: 400,
+    height: 2000,
+    maximized: false,
   },
   {
     id: "skills",

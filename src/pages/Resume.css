@@ -1,0 +1,57 @@
+.resume-container {
+  font-family: "Calibri", sans-serif;
+  width: 740px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.resume-header {
+  text-align: center;
+}
+
+.resume-header h1 {
+  font-size: 16pt;
+  margin: 0 0 1.08pt;
+  color: #1f3864;
+}
+
+.resume-body h2 {
+  font-size: 11pt;
+  margin: 0 0 1.08pt;
+  border-bottom: 2px solid #1f3864;
+  color: #1f3864;
+}
+
+.resume-header h3 {
+  font-size: 11pt;
+  font-weight: normal;
+  margin: 0 0 1.08pt;
+}
+
+.resume-header h4 {
+  font-size: 10pt;
+  font-weight: normal;
+  margin: 0 0 1.08pt;
+}
+
+.resume-body p {
+  margin: 0 0 1.08pt;
+}
+
+.resume-body li {
+  margin: 0 0 1.08pt;
+}
+
+.resume-body ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.position-title {
+  font-weight: bold;
+}
+
+.position {
+  display: flex;
+  justify-content: space-between;
+}
