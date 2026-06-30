@@ -12,6 +12,7 @@ import Welcome from "../pages/Welcome";
 import appIcon from "../assets/appwizard.png";
 import ProjectDetails from "../pages/ProjectDetails";
 import { projects } from "./projects.jsx";
+import ComingSoon from "../pages/ComingSoon";
 
 export const desktopItems = [
   {
@@ -44,7 +45,7 @@ export const desktopItems = [
     label: "Experience",
     icon: folderIcon,
     title: "Experience",
-    component: Experience,
+    component: ComingSoon,
     maximized: false,
     x: 300,
     y: 150,
@@ -54,7 +55,7 @@ export const desktopItems = [
     label: "Resume.pdf",
     icon: pdfIcon,
     title: "Resume",
-    component: About,
+    component: ComingSoon,
     maximized: false,
     x: 350,
     y: 200,
@@ -66,7 +67,7 @@ export const desktopItems = [
     label: "Skills",
     icon: controlPanelIcon,
     title: "Skills",
-    component: About,
+    component: ComingSoon,
     maximized: false,
   },
   {
@@ -74,7 +75,7 @@ export const desktopItems = [
     label: "Contact",
     icon: envelopeIcon,
     title: "Contact",
-    component: About,
+    component: ComingSoon,
     maximized: false,
   },
   {
@@ -82,7 +83,7 @@ export const desktopItems = [
     label: "Certificates",
     icon: certificateIcon,
     title: "Certificates",
-    component: About,
+    component: ComingSoon,
     maximized: false,
   },
   {
@@ -93,7 +94,7 @@ export const desktopItems = [
     component: Welcome,
     position: "center",
     width: 700,
-    height: 500,
+    height: 600,
     maximized: false,
   },
   {
