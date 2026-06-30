@@ -7,7 +7,7 @@ import beginnerBar from "../assets/beginner-bar.png";
 
 import KSAIcon from "../assets/ksa.png";
 import UKIcon from "../assets/uk.png";
-import FranceIcon from "../assets/france.png";
+import FranceIcon from "../assets/France.png";
 
 export default function Languages() {
   return (
