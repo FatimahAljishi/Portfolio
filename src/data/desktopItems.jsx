@@ -17,6 +17,7 @@ import Resume from "../pages/Resume";
 import Skills from "../pages/Skills";
 import TechnicalSkills from "../pages/TechnicalSkills";
 import skillIcon from "../assets/file_gears.png";
+import SoftSkills from "../pages/SoftSkills";
 
 export const desktopItems = [
   {
@@ -164,6 +165,19 @@ export const desktopItems = [
     y: 150,
     width: 800,
     height: 450,
+    hiddenFromDesktop: true,
+  },
+  {
+    id: "softSkills",
+    label: "Soft Skills",
+    icon: skillIcon,
+    title: "Soft Skills",
+    component: SoftSkills,
+    maximized: false,
+    x: 500,
+    y: 100,
+    width: 500,
+    height: 580,
     hiddenFromDesktop: true,
   },
 ];
