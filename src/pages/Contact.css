@@ -1,0 +1,100 @@
+.contact-window {
+  padding: 18px;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #000080;
+  font-weight: bold;
+}
+
+.contact-header p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-field label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-size: 13px;
+  padding: 5px 6px;
+
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+
+  background: white;
+  outline: none;
+}
+
+.contact-field textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.contact-buttons button {
+  min-width: 90px;
+  padding: 6px 14px;
+
+  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-size: 13px;
+
+  background: #c0c0c0;
+
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+
+  cursor: pointer;
+}
+
+.contact-buttons button:active {
+  border-top: 2px solid #404040;
+  border-left: 2px solid #404040;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.contact-buttons button:disabled {
+  cursor: default;
+  color: #666;
+}
+
+.contact-status {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #000080;
+}

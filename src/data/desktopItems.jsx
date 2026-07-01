@@ -20,6 +20,7 @@ import skillIcon from "../assets/file_gears.png";
 import SoftSkills from "../pages/SoftSkills";
 import Languages from "../pages/Languages";
 import languageIcon from "../assets/soundyel.png";
+import Contact from "../pages/Contact";
 
 export const desktopItems = [
   {
@@ -90,7 +91,7 @@ export const desktopItems = [
     label: "Contact",
     icon: envelopeIcon,
     title: "Contact",
-    component: ComingSoon,
+    component: Contact,
     maximized: false,
     x: 300,
     y: 150,
