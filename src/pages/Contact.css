@@ -1,6 +1,6 @@
 .contact-window {
   padding: 18px;
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-family: "Courier New", monospace;
   color: black;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 .contact-header h2 {
   margin: 0;
   font-size: 22px;
-  color: #000080;
+  color: #010885;
   font-weight: bold;
 }
 
@@ -40,14 +40,11 @@
 .contact-field input,
 .contact-field textarea {
   width: 100%;
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-family: "Courier New", monospace;
   font-size: 13px;
   padding: 5px 6px;
 
-  border-top: 2px solid #808080;
-  border-left: 2px solid #808080;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
+  border: 1px solid #c0c0c0;
 
   background: white;
   outline: none;
@@ -68,7 +65,7 @@
   min-width: 90px;
   padding: 6px 14px;
 
-  font-family: "MS Sans Serif", "Tahoma", sans-serif;
+  font-family: "Courier New", monospace;
   font-size: 13px;
 
   background: #c0c0c0;
@@ -96,5 +93,5 @@
 .contact-status {
   margin-top: 6px;
   font-size: 13px;
-  color: #000080;
+  color: #010885;
 }
