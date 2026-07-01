@@ -1,0 +1,96 @@
+.window {
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: Tahoma, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+}
+
+.title-bar {
+  display: flex;
+  height: 24px;
+  background: #010885;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-left {
+  display: flex;
+  padding: 0 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  gap: 4px;
+}
+
+.window-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+.window-buttons {
+  display: flex;
+  padding: 0 4px;
+  gap: 3px;
+}
+
+.window-buttons button {
+  width: 18px;
+  height: 18px;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 11px;
+  line-height: 10px;
+}
+
+.pdf-window-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+
+  margin: 3px;
+  background: #c0c0c0;
+  padding: 4px;
+}
+
+.window-body-scroll {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.pdf-window-footer {
+  display: flex;
+  padding: 5px;
+  background: #c0c0c0;
+  height: 40px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.pdf-window-footer button {
+  min-width: 90px;
+  height: 30px;
+  padding: 6px 14px;
+
+  font-size: 13px;
+
+  background: #c0c0c0;
+
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+
+  cursor: pointer;
+  overflow: hidden;
+}

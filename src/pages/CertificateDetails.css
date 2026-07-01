@@ -1,0 +1,30 @@
+.certificate-details-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  max-height: 88vh;
+  border: 2px solid black;
+}
+
+.certificate-image-container {
+  border: 2px solid #b1afaf;
+  padding: 10px;
+}
+
+.details-box {
+  border: 2px solid #b1afaf;
+  padding: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.details-box legend {
+  padding: 0 6px;
+  color: #555;
+  font-size: 15px;
+}

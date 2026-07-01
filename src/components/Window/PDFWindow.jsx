@@ -1,4 +1,4 @@
-import "./Window.css";
+import "./PDFWindow.css";
 
 export default function Window({
   title,
@@ -12,6 +12,7 @@ export default function Window({
   height,
   maximized,
   position,
+  certificateLink,
 }) {
   const availableWidth = "calc(100vw - 40px)";
   const availableHeight = "calc(100vh - 40px)";
@@ -55,16 +56,17 @@ export default function Window({
           </button>
         </div>
       </div>
-      <div className="window-body">
+      <div className="pdf-window-body">
         {" "}
         <div className="window-body-scroll">{children}</div>
       </div>
-      <div className="window-footer">
-        {[0, 1, 2].map((index) => (
-          <div className="status-box" key={index}>
-            {footerItems[index] || ""}
-          </div>
-        ))}
+      <div className="pdf-window-footer">
+        <a href={certificateLink} download>
+          <button>Download PDF</button>
+        </a>
+        <button type="button" onClick={onClose}>
+          Close
+        </button>
       </div>
     </div>
   );

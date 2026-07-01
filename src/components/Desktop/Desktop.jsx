@@ -4,6 +4,7 @@ import Window from "../Window/Window";
 import DesktopIcon from "../DesktopIcon/DesktopIcon";
 import { useState } from "react";
 import { desktopItems } from "../../data/desktopItems.jsx";
+import PDFWindow from "../Window/PDFWindow";
 
 export default function Desktop() {
   const [openWindows, setOpenWindows] = useState(["welcome"]);
@@ -41,7 +42,7 @@ export default function Desktop() {
 
         const ActiveComponent = item.component;
 
-        return (
+        return !item.pdfWindow ? (
           <Window
             key={item.id}
             title={item.title}
@@ -57,6 +58,23 @@ export default function Desktop() {
           >
             <ActiveComponent openWindow={openWindow} {...item.componentProps} />
           </Window>
+        ) : (
+          <PDFWindow
+            key={item.id}
+            title={item.title}
+            icon={item.icon}
+            onClose={() => closeWindow(item.id)}
+            footerItems={item.status}
+            x={item.x}
+            y={item.y}
+            height={item.height}
+            width={item.width}
+            maximized={item.maximized}
+            position={item.position}
+            certificateLink={item.certificateLink}
+          >
+            <ActiveComponent openWindow={openWindow} {...item.componentProps} />
+          </PDFWindow>
         );
       })}
 

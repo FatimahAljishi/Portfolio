@@ -21,6 +21,10 @@ import SoftSkills from "../pages/SoftSkills";
 import Languages from "../pages/Languages";
 import languageIcon from "../assets/soundyel.png";
 import Contact from "../pages/Contact";
+import Certificates from "../pages/Certificates";
+import certificatesIcon from "../assets/certificates.png";
+import CertificateDetails from "../pages/CertificateDetails";
+import { certificates } from "./certificates.jsx";
 
 export const desktopItems = [
   {
@@ -101,9 +105,9 @@ export const desktopItems = [
   {
     id: "certificates",
     label: "Certificates",
-    icon: certificateIcon,
+    icon: certificatesIcon,
     title: "Certificates",
-    component: ComingSoon,
+    component: Certificates,
     maximized: false,
     x: 300,
     y: 150,
@@ -195,5 +199,25 @@ export const desktopItems = [
     width: 800,
     height: 340,
     hiddenFromDesktop: true,
+  },
+  {
+    id: "metaBackend",
+    label: "Meta Back-End Developer Professional Certificate",
+    icon: certificateIcon,
+    title: "Meta Back-End Developer Professional Certificate",
+    component: CertificateDetails,
+    componentProps: {
+      certificate: certificates.find(
+        (certificate) => certificate.id === "metaBackend",
+      ),
+    },
+    maximized: false,
+    x: 350,
+    y: 150,
+    width: 800,
+    height: 450,
+    hiddenFromDesktop: true,
+    pdfWindow: true,
+    certificateLink: "/meta-backend.pdf",
   },
 ];
