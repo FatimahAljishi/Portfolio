@@ -1,7 +1,7 @@
 import skillIcon from "../assets/file_gears.png";
 import languageIcon from "../assets/soundyel.png";
 
-export const skillItems = [
+export const skills = [
   {
     id: "technicalSkills",
     label: "Technical Skills",

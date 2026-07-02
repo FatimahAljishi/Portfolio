@@ -1,19 +1,4 @@
 .experience-window {
-  padding: 16px;
-  font-family: Tahoma, Arial, sans-serif;
-  font-size: 13px;
-  color: black;
-}
-
-.experience-window h2 {
-  margin: 0 0 16px;
-  font-size: 20px;
-}
-
-.experience-item {
-  margin-bottom: 16px;
-}
-
-.experience-item p {
-  margin: 4px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }

@@ -1,7 +1,7 @@
 import "./Projects.css";
 import FolderBody from "../components/FolderBody/FolderBody";
 import folderOpenIcon from "../assets/folder-open.png";
-import { projectItems } from "../data/projectItems";
+import { projects } from "../data/projects";
 
 export default function Projects({ openWindow }) {
   return (
@@ -11,7 +11,7 @@ export default function Projects({ openWindow }) {
       content="Double-click on a project to view its details."
     >
       <div className="projects-window">
-        {projectItems.map((project) => (
+        {projects.map((project) => (
           <button
             key={project.id}
             className="project-icon"

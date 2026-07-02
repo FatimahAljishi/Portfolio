@@ -1,6 +1,6 @@
 import FolderBody from "../components/FolderBody/FolderBody";
 import folderOpenIcon from "../assets/folder-open.png";
-import { certificateItems } from "../data/certificateItems";
+import { certificates } from "../data/certificates";
 import "./Certificates.css";
 
 export default function Certificates({ openWindow }) {
@@ -11,7 +11,7 @@ export default function Certificates({ openWindow }) {
       content="Double-click a certificate to view details."
     >
       <div className="certificates-window">
-        {certificateItems.map((certificate) => (
+        {certificates.map((certificate) => (
           <button
             key={certificate.id}
             className="certificate-icon"

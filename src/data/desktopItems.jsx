@@ -57,7 +57,7 @@ export const desktopItems = [
     label: "My Experience",
     icon: folderIcon,
     title: "My Experience",
-    component: ComingSoon,
+    component: Experience,
     maximized: false,
     x: 300,
     y: 150,

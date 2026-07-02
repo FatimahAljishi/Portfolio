@@ -1,6 +1,6 @@
 import FolderBody from "../components/FolderBody/FolderBody";
 import folderOpenIcon from "../assets/folder-open.png";
-import { skillItems } from "../data/skillItems";
+import { skills } from "../data/skills.jsx";
 import "./Skills.css";
 
 export default function Skills({ openWindow }) {
@@ -11,7 +11,7 @@ export default function Skills({ openWindow }) {
       content="Double-click a category to explore my skills."
     >
       <div className="skills-window">
-        {skillItems.map((skill) => (
+        {skills.map((skill) => (
           <button
             key={skill.id}
             className="skill-icon"

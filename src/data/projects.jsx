@@ -24,10 +24,13 @@ import cssIcon from "../assets/css.png";
 import jsIcon from "../assets/js.png";
 import viteIcon from "../assets/vite.png";
 import portfolioLiveDemoIcon from "../assets/portfolio-demo.png";
+import appIcon from "../assets/appwizard.png";
 
 export const projects = [
   {
     id: "agromind",
+    label: "AgroMind.exe",
+    icon: appIcon,
     fileName: "AgroMind.exe",
     header: agromindHeader,
     title: "AgroMind",
@@ -80,6 +83,8 @@ export const projects = [
   },
   {
     id: "resumeEvaluator",
+    label: "ResumeEvaluator.exe",
+    icon: appIcon,
     fileName: "ResumeEvaluator.exe",
     header: resumeEvaluatorHeader,
     title: "Resume Evaluator",
@@ -122,6 +127,8 @@ export const projects = [
   },
   {
     id: "portfolio",
+    label: "Portfolio.exe",
+    icon: appIcon,
     fileName: "Portfolio.exe",
     header: portfolioHeader,
     title: "Portfolio",
