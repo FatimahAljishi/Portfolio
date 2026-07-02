@@ -1,12 +1,25 @@
+.resume-window {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
 .resume-container {
   font-family: "Calibri", sans-serif;
-  width: 740px;
   margin: 0 auto;
   overflow: auto;
+  border: 2px solid #b1afaf;
+  padding: 10px;
 }
 
 .resume-header {
   text-align: center;
+}
+
+.resume-details {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
 }
 
 .resume-header h1 {

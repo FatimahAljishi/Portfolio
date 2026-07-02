@@ -61,9 +61,11 @@ export default function Window({
         <div className="window-body-scroll">{children}</div>
       </div>
       <div className="pdf-window-footer">
-        <a href={certificateLink} download>
-          <button>Download PDF</button>
-        </a>
+        {certificateLink && (
+          <a href={certificateLink} download>
+            <button>Download PDF</button>
+          </a>
+        )}
         <button type="button" onClick={onClose}>
           Close
         </button>
