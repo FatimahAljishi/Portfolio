@@ -55,6 +55,7 @@ export default function Desktop() {
             width={item.width}
             maximized={item.maximized}
             position={item.position}
+            backgroundColor={item.backgroundColor}
           >
             <ActiveComponent openWindow={openWindow} {...item.componentProps} />
           </Window>

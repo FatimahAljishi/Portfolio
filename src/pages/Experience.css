@@ -1,4 +1,72 @@
 .experience-window {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  background-color: #c0c0c0;
+  height: 100%;
+  min-height: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.company-list-header {
+  border: 1px solid black;
+  padding: 4px;
+  background-color: #c0c0c0;
+}
+
+.company-list-content,
+.experience-details {
+  flex: 1;
+  min-height: 0;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(222, 222, 222);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  background-color: white;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.company-item.selected {
+  background: #010885;
+  color: white;
+}
+
+.company-item.selected p {
+  color: white;
+}
+
+.company-item:hover:not(.selected) {
+  background: #d9ecff;
+}
+
+.company-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.company-item p {
+  margin: 0;
 }

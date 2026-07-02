@@ -1,0 +1,43 @@
+.journey-container {
+  height: 100%;
+  min-width: 0;
+  overflow: auto;
+  font-family: "Arial", sans-serif;
+  padding: 14px;
+}
+
+.journey-details-container {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(120px, 1fr);
+  gap: 10px;
+  min-width: 0;
+}
+
+.journey-details {
+  min-width: 0;
+  border-right: 2px solid #808080;
+  padding-right: 10px;
+}
+
+.journey-details p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.journey-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.journey-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  justify-self: center;
+}
+
+.journey-title {
+  color: #010885;
+  margin-bottom: 20px;
+}

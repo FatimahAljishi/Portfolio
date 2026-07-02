@@ -61,8 +61,10 @@ export const desktopItems = [
     maximized: false,
     x: 300,
     y: 150,
-    width: 800,
-    height: 400,
+    width: 850,
+    height: 530,
+    backgroundColor: "#c0c0c0",
+    status: ["4 Object(s)", "", ""],
   },
   {
     id: "resume",

@@ -12,6 +12,7 @@ export default function Window({
   height,
   maximized,
   position,
+  backgroundColor,
 }) {
   const availableWidth = "calc(100vw - 40px)";
   const availableHeight = "calc(100vh - 40px)";
@@ -55,7 +56,10 @@ export default function Window({
           </button>
         </div>
       </div>
-      <div className="window-body">
+      <div
+        className="window-body"
+        style={{ backgroundColor: backgroundColor || "white" }}
+      >
         {" "}
         <div className="window-body-scroll">{children}</div>
       </div>
