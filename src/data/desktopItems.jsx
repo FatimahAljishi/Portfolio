@@ -26,6 +26,8 @@ import certificatesIcon from "../assets/certificates.png";
 import CertificateDetails from "../pages/CertificateDetails";
 import { certificates } from "./certificates.jsx";
 import experienceIcon from "../assets/briefcase.png";
+import Education from "../pages/Education";
+import educationIcon from "../assets/education.png";
 
 export const desktopItems = [
   {
@@ -50,6 +52,44 @@ export const desktopItems = [
     x: 250,
     y: 100,
     width: 700,
+    height: 400,
+    zIndex: 1,
+  },
+  {
+    id: "education",
+    label: "My Education",
+    icon: educationIcon,
+    title: "My Education",
+    component: Education,
+    x: 500,
+    y: 100,
+    width: 550,
+    height: 500,
+    zIndex: 1,
+    status: ["2 Object(s)", "", ""],
+  },
+  {
+    id: "skills",
+    label: "My Skills",
+    icon: controlPanelIcon,
+    title: "My Skills",
+    component: Skills,
+    x: 300,
+    y: 150,
+    width: 800,
+    height: 400,
+    status: ["3 Object(s)", "", ""],
+    zIndex: 1,
+  },
+  {
+    id: "certificates",
+    label: "My Certificates",
+    icon: certificatesIcon,
+    title: "Certificates",
+    component: Certificates,
+    x: 300,
+    y: 150,
+    width: 800,
     height: 400,
     zIndex: 1,
   },
@@ -82,19 +122,6 @@ export const desktopItems = [
     zIndex: 1,
   },
   {
-    id: "skills",
-    label: "My Skills",
-    icon: controlPanelIcon,
-    title: "My Skills",
-    component: Skills,
-    x: 300,
-    y: 150,
-    width: 800,
-    height: 400,
-    status: ["3 Object(s)", "", ""],
-    zIndex: 1,
-  },
-  {
     id: "contact",
     label: "Contact Me",
     icon: envelopeIcon,
@@ -104,18 +131,6 @@ export const desktopItems = [
     y: 80,
     width: 800,
     height: 600,
-    zIndex: 1,
-  },
-  {
-    id: "certificates",
-    label: "My Certificates",
-    icon: certificatesIcon,
-    title: "Certificates",
-    component: Certificates,
-    x: 300,
-    y: 150,
-    width: 800,
-    height: 400,
     zIndex: 1,
   },
   {

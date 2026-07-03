@@ -54,10 +54,10 @@ export default function Window({
         zIndex,
         left: maximized
           ? 0
-          : `min(${x}px, calc(100vw - min(${width}px, ${availableWidth}))`,
+          : `min(${x}px, calc(100vw - min(${width}px, ${availableWidth})))`,
         top: maximized
           ? 0
-          : `min(${y}px, calc(100vh - min(${height}px, ${availableHeight}))`,
+          : `min(${y}px, calc(100vh - min(${height}px, ${availableHeight})))`,
         width: maximized ? "100%" : `min(${width}px, 100vw)`,
         height: maximized
           ? "calc(100vh - 28px)"

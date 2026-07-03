@@ -1,0 +1,60 @@
+.education-window {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.degree-icon {
+  width: 80px;
+  height: auto;
+  margin-right: 25px;
+}
+
+.uoe,
+.iau {
+  display: flex;
+  flex-direction: row;
+}
+
+.uoe {
+  border-bottom: 2px solid #808080;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.degree-title {
+  font-size: 16px;
+  color: #010885;
+  margin-bottom: 5px;
+}
+
+.degree-location {
+  margin-bottom: 10px;
+}
+
+.degree-details-container p,
+.degree-details-container span {
+  font-size: 14px;
+}
+
+.degree-program {
+  font-weight: bold;
+  color: #010885;
+  margin-bottom: 5px;
+}
+
+.degree-duration {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.degree-graduation {
+  margin-bottom: 10px;
+}
+
+.degree-project-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #010885;
+}
