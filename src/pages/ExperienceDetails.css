@@ -8,9 +8,12 @@
 
 .journey-details-container {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(120px, 1fr);
-  gap: 10px;
-  min-width: 0;
+  grid-template-columns: 2fr 1fr;
+  min-width: 500px;
+}
+
+.journey-container {
+  overflow: auto;
 }
 
 .journey-details {
