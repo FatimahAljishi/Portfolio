@@ -15,7 +15,11 @@
   top: 10px;
   left: 10px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(auto-fill, 90px);
+  column-gap: 20px;
+  row-gap: 0px;
+
+  height: calc(100vh - 40px);
 }
