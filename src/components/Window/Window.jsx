@@ -3,6 +3,8 @@ import "./Window.css";
 export default function Window({
   title,
   onClose,
+  onMinimize,
+  onMaximize,
   children,
   icon,
   footerItems = [],
@@ -14,8 +16,8 @@ export default function Window({
   position,
   backgroundColor,
 }) {
-  const availableWidth = "calc(100vw - 40px)";
-  const availableHeight = "calc(100vh - 40px)";
+  const availableWidth = "100vw";
+  const availableHeight = "calc(100vh - 28px)";
   return (
     <div
       className="window"
@@ -49,8 +51,12 @@ export default function Window({
           <span>{title}</span>
         </div>
         <div className="window-buttons">
-          <button type="button">_</button>
-          <button type="button">□</button>
+          <button type="button" onClick={onMinimize}>
+            _
+          </button>
+          <button className="window-button" onClick={onMaximize}>
+            {maximized ? "❐" : "□"}
+          </button>
           <button type="button" onClick={onClose}>
             ×
           </button>

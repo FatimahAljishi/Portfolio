@@ -25,6 +25,7 @@ import Certificates from "../pages/Certificates";
 import certificatesIcon from "../assets/certificates.png";
 import CertificateDetails from "../pages/CertificateDetails";
 import { certificates } from "./certificates.jsx";
+import experienceIcon from "../assets/briefcase.png";
 
 export const desktopItems = [
   {
@@ -37,7 +38,6 @@ export const desktopItems = [
     y: 50,
     width: 1000,
     height: 700,
-    maximized: false,
   },
   {
     id: "projects",
@@ -50,15 +50,13 @@ export const desktopItems = [
     y: 100,
     width: 700,
     height: 400,
-    maximized: false,
   },
   {
     id: "experience",
     label: "My Experience",
-    icon: folderIcon,
+    icon: experienceIcon,
     title: "My Experience",
     component: Experience,
-    maximized: false,
     x: 150,
     y: 90,
     width: 1200,
@@ -72,12 +70,10 @@ export const desktopItems = [
     icon: pdfIcon,
     title: "Resume",
     component: Resume,
-    maximized: false,
     x: 150,
     y: 5,
     width: 1250,
     height: 2000,
-    maximized: false,
     pdfWindow: true,
     certificateLink: "/Fatimah_Aljishi_CV_2026.pdf",
   },
@@ -87,7 +83,6 @@ export const desktopItems = [
     icon: controlPanelIcon,
     title: "My Skills",
     component: Skills,
-    maximized: false,
     x: 300,
     y: 150,
     width: 800,
@@ -100,7 +95,6 @@ export const desktopItems = [
     icon: envelopeIcon,
     title: "Contact Me",
     component: Contact,
-    maximized: false,
     x: 360,
     y: 80,
     width: 800,
@@ -108,11 +102,10 @@ export const desktopItems = [
   },
   {
     id: "certificates",
-    label: "Certificates",
+    label: "My Certificates",
     icon: certificatesIcon,
     title: "Certificates",
     component: Certificates,
-    maximized: false,
     x: 300,
     y: 150,
     width: 800,
@@ -127,7 +120,6 @@ export const desktopItems = [
     position: "center",
     width: 700,
     height: 600,
-    maximized: false,
   },
   {
     id: "agromind",
@@ -139,7 +131,8 @@ export const desktopItems = [
       project: projects.find((project) => project.id === "agromind"),
     },
     hiddenFromDesktop: true,
-    maximized: true,
+    width: 3000,
+    height: 3000,
   },
   {
     id: "resumeEvaluator",
@@ -151,7 +144,8 @@ export const desktopItems = [
       project: projects.find((project) => project.id === "resumeEvaluator"),
     },
     hiddenFromDesktop: true,
-    maximized: true,
+    width: 3000,
+    height: 3000,
   },
   {
     id: "portfolio",
@@ -163,7 +157,8 @@ export const desktopItems = [
       project: projects.find((project) => project.id === "portfolio"),
     },
     hiddenFromDesktop: true,
-    maximized: true,
+    width: 3000,
+    height: 3000,
   },
   {
     id: "technicalSkills",
@@ -171,7 +166,6 @@ export const desktopItems = [
     icon: skillIcon,
     title: "Technical Skills",
     component: TechnicalSkills,
-    maximized: false,
     x: 350,
     y: 150,
     width: 800,
@@ -184,7 +178,6 @@ export const desktopItems = [
     icon: skillIcon,
     title: "Soft Skills",
     component: SoftSkills,
-    maximized: false,
     x: 500,
     y: 100,
     width: 500,
@@ -197,7 +190,6 @@ export const desktopItems = [
     icon: languageIcon,
     title: "Languages",
     component: Languages,
-    maximized: false,
     x: 350,
     y: 150,
     width: 800,
@@ -215,7 +207,6 @@ export const desktopItems = [
         (certificate) => certificate.id === "metaBackend",
       ),
     },
-    maximized: false,
     x: 350,
     y: 150,
     width: 800,
@@ -235,7 +226,6 @@ export const desktopItems = [
         (certificate) => certificate.id === "pythonSDE",
       ),
     },
-    maximized: false,
     x: 350,
     y: 150,
     width: 800,

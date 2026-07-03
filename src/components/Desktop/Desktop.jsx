@@ -7,17 +7,42 @@ import { desktopItems } from "../../data/desktopItems.jsx";
 import PDFWindow from "../Window/PDFWindow";
 
 export default function Desktop() {
-  const [openWindows, setOpenWindows] = useState(["welcome"]);
+  const [openWindows, setOpenWindows] = useState([
+    { id: "welcome", minimized: false, maximized: false },
+  ]);
 
   function openWindow(id) {
     setOpenWindows((prev) => {
-      if (prev.includes(id)) return prev;
-      return [...prev, id];
+      const alreadyOpen = prev.find((window) => window.id === id);
+
+      if (alreadyOpen) {
+        return prev.map((window) =>
+          window.id === id ? { ...window, minimized: false } : window,
+        );
+      }
+
+      return [...prev, { id, minimized: false, maximized: false }];
     });
   }
 
   function closeWindow(id) {
-    setOpenWindows((prev) => prev.filter((windowId) => windowId !== id));
+    setOpenWindows((prev) => prev.filter((window) => window.id !== id));
+  }
+
+  function toggleMinimize(id) {
+    setOpenWindows((prev) =>
+      prev.map((window) =>
+        window.id === id ? { ...window, minimized: !window.minimized } : window,
+      ),
+    );
+  }
+
+  function toggleMaximize(id) {
+    setOpenWindows((prev) =>
+      prev.map((window) =>
+        window.id === id ? { ...window, maximized: !window.maximized } : window,
+      ),
+    );
   }
 
   return (
@@ -35,10 +60,10 @@ export default function Desktop() {
           ))}
       </div>
 
-      {openWindows.map((id) => {
-        const item = desktopItems.find((i) => i.id === id);
+      {openWindows.map((window) => {
+        const item = desktopItems.find((i) => i.id === window.id);
 
-        if (!item) return null;
+        if (!item || window.minimized) return null;
 
         const ActiveComponent = item.component;
 
@@ -48,12 +73,14 @@ export default function Desktop() {
             title={item.title}
             icon={item.icon}
             onClose={() => closeWindow(item.id)}
+            onMinimize={() => toggleMinimize(item.id)}
+            onMaximize={() => toggleMaximize(item.id)}
             footerItems={item.status}
             x={item.x}
             y={item.y}
             height={item.height}
             width={item.width}
-            maximized={item.maximized}
+            maximized={window.maximized}
             position={item.position}
             backgroundColor={item.backgroundColor}
           >
@@ -65,12 +92,14 @@ export default function Desktop() {
             title={item.title}
             icon={item.icon}
             onClose={() => closeWindow(item.id)}
+            onMinimize={() => toggleMinimize(item.id)}
+            onMaximize={() => toggleMaximize(item.id)}
             footerItems={item.status}
             x={item.x}
             y={item.y}
             height={item.height}
             width={item.width}
-            maximized={item.maximized}
+            maximized={window.maximized}
             position={item.position}
             certificateLink={item.certificateLink}
           >
@@ -79,7 +108,11 @@ export default function Desktop() {
         );
       })}
 
-      <Taskbar />
+      <Taskbar
+        openWindows={openWindows}
+        desktopItems={desktopItems}
+        onTaskbarClick={toggleMinimize}
+      />
     </div>
   );
 }
