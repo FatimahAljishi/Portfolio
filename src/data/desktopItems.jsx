@@ -28,6 +28,8 @@ import { certificates } from "./certificates.jsx";
 import experienceIcon from "../assets/briefcase.png";
 import Education from "../pages/Education";
 import educationIcon from "../assets/education.png";
+import CatGame from "../pages/CatGame";
+import catIcon from "../assets/cat.png";
 
 export const desktopItems = [
   {
@@ -270,5 +272,16 @@ export const desktopItems = [
     hiddenFromDesktop: true,
     pdfWindow: true,
     zIndex: 1,
+  },
+  {
+    id: "cat-game",
+    title: "Cat.exe",
+    label: "Cat.exe",
+    icon: catIcon,
+    component: CatGame,
+    width: 420,
+    height: 430,
+    x: 450,
+    y: 120,
   },
 ];
