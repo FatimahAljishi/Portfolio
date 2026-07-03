@@ -38,6 +38,7 @@ export const desktopItems = [
     y: 50,
     width: 1000,
     height: 700,
+    zIndex: 1,
   },
   {
     id: "projects",
@@ -50,6 +51,7 @@ export const desktopItems = [
     y: 100,
     width: 700,
     height: 400,
+    zIndex: 1,
   },
   {
     id: "experience",
@@ -63,6 +65,7 @@ export const desktopItems = [
     height: 600,
     backgroundColor: "#c0c0c0",
     status: ["4 Object(s)", "", ""],
+    zIndex: 1,
   },
   {
     id: "resume",
@@ -71,11 +74,12 @@ export const desktopItems = [
     title: "Resume",
     component: Resume,
     x: 150,
-    y: 5,
+    y: 0,
     width: 1250,
     height: 2000,
     pdfWindow: true,
     certificateLink: "/Fatimah_Aljishi_CV_2026.pdf",
+    zIndex: 1,
   },
   {
     id: "skills",
@@ -88,6 +92,7 @@ export const desktopItems = [
     width: 800,
     height: 400,
     status: ["3 Object(s)", "", ""],
+    zIndex: 1,
   },
   {
     id: "contact",
@@ -99,6 +104,7 @@ export const desktopItems = [
     y: 80,
     width: 800,
     height: 600,
+    zIndex: 1,
   },
   {
     id: "certificates",
@@ -110,6 +116,7 @@ export const desktopItems = [
     y: 150,
     width: 800,
     height: 400,
+    zIndex: 1,
   },
   {
     id: "welcome",
@@ -117,9 +124,11 @@ export const desktopItems = [
     icon: textIcon,
     title: "Welcome.txt",
     component: Welcome,
-    position: "center",
+    x: 300,
+    y: 150,
     width: 700,
-    height: 600,
+    height: 520,
+    zIndex: 1,
   },
   {
     id: "agromind",
@@ -133,6 +142,9 @@ export const desktopItems = [
     hiddenFromDesktop: true,
     width: 3000,
     height: 3000,
+    zIndex: 1,
+    x: 0,
+    y: 0,
   },
   {
     id: "resumeEvaluator",
@@ -146,6 +158,9 @@ export const desktopItems = [
     hiddenFromDesktop: true,
     width: 3000,
     height: 3000,
+    zIndex: 1,
+    x: 0,
+    y: 0,
   },
   {
     id: "portfolio",
@@ -159,6 +174,9 @@ export const desktopItems = [
     hiddenFromDesktop: true,
     width: 3000,
     height: 3000,
+    zIndex: 1,
+    x: 0,
+    y: 0,
   },
   {
     id: "technicalSkills",
@@ -171,6 +189,7 @@ export const desktopItems = [
     width: 800,
     height: 450,
     hiddenFromDesktop: true,
+    zIndex: 1,
   },
   {
     id: "softSkills",
@@ -183,6 +202,7 @@ export const desktopItems = [
     width: 500,
     height: 580,
     hiddenFromDesktop: true,
+    zIndex: 1,
   },
   {
     id: "languages",
@@ -195,6 +215,7 @@ export const desktopItems = [
     width: 800,
     height: 340,
     hiddenFromDesktop: true,
+    zIndex: 1,
   },
   {
     id: "metaBackend",
@@ -214,6 +235,7 @@ export const desktopItems = [
     hiddenFromDesktop: true,
     pdfWindow: true,
     certificateLink: "/Fatimah_Aljishi_Meta_backend.pdf",
+    zIndex: 1,
   },
   {
     id: "pythonSDE",
@@ -232,5 +254,6 @@ export const desktopItems = [
     height: 500,
     hiddenFromDesktop: true,
     pdfWindow: true,
+    zIndex: 1,
   },
 ];

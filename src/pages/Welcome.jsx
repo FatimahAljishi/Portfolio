@@ -22,10 +22,6 @@ export default function Welcome() {
       <p className="system-ready">
         System ready<span className="cursor">_</span>
       </p>
-      <p>
-        Some icons are placeholders, and a few classic desktop features like
-        dragging, resizing, and window controls are still being built.
-      </p>
     </div>
   );
 }

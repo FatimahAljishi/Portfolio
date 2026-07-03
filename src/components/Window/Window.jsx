@@ -5,47 +5,62 @@ export default function Window({
   onClose,
   onMinimize,
   onMaximize,
+  onFocus,
+  onMove,
   children,
   icon,
   footerItems = [],
   x,
   y,
+  zIndex,
   width,
   height,
   maximized,
-  position,
   backgroundColor,
 }) {
   const availableWidth = "100vw";
   const availableHeight = "calc(100vh - 28px)";
+  function handleMouseDown(e) {
+    if (maximized) return;
+
+    onFocus();
+
+    const startMouseX = e.clientX;
+    const startMouseY = e.clientY;
+
+    const startWindowX = x;
+    const startWindowY = y;
+
+    function handleMouseMove(e) {
+      const newX = startWindowX + (e.clientX - startMouseX);
+      const newY = startWindowY + (e.clientY - startMouseY);
+
+      onMove(newX, newY);
+    }
+
+    function handleMouseUp() {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    }
+
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+  }
   return (
     <div
       className="window"
-      style={
-        maximized
-          ? {
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "calc(100vh - 28px)",
-            }
-          : {
-              left:
-                position === "center"
-                  ? `calc((100vw - min(${width}px, ${availableWidth})) / 2)`
-                  : `min(${x}px, calc(100vw - min(${width}px, ${availableWidth}) - 20px))`,
-
-              top:
-                position === "center"
-                  ? `calc((100vh - min(${height}px, ${availableHeight})) / 2)`
-                  : `min(${y}px, calc(100vh - min(${height}px, ${availableHeight}) - 20px))`,
-
-              width: `min(${width}px, ${availableWidth})`,
-              height: `min(${height}px, ${availableHeight})`,
-            }
-      }
+      onMouseDown={onFocus}
+      style={{
+        zIndex,
+        left: maximized ? 0 : x,
+        top: maximized ? 0 : y,
+        width: maximized ? "100%" : `min(${width}px, 100vw)`,
+        height: maximized
+          ? "calc(100vh - 28px)"
+          : `min(${height}px, calc(100vh - 28px))`,
+      }}
     >
-      <div className="title-bar">
+      <div className="title-bar" onMouseDown={handleMouseDown}>
         <div className="title-left">
           {icon && <img src={icon} alt="Window Icon" className="window-icon" />}
           <span>{title}</span>
