@@ -19,9 +19,10 @@ export default function Welcome() {
         Double-click any desktop icon to begin exploring.
       </p>
 
-      <p className="system-ready">
-        System ready<span className="cursor">_</span>
-      </p>
+      <div className="tip">
+        Tip: Curious why this portfolio looks like Windows 98? Click the
+        calendar on the taskbar.
+      </div>
     </div>
   );
 }

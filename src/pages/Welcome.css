@@ -50,12 +50,7 @@
   margin-top: 50px;
 }
 
-.cursor {
-  animation: blink 1s steps(2, start) infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+.tip {
+  padding-top: 40px;
+  color: #000080;
 }

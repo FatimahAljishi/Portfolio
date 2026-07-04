@@ -73,7 +73,7 @@ function Taskbar({ openWindows, desktopItems, onTaskbarClick, openWindow }) {
 
       <div className="side-box">
         <div className="taskbar-icons">
-          <button>
+          <button onClick={() => openWindow("calendar")}>
             <img className="calendar-icon" src={calendarIcon} alt="Calendar" />
           </button>
           <button onClick={() => setMuted(!muted)}>

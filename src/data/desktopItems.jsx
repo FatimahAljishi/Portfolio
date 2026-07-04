@@ -32,6 +32,8 @@ import CatGame from "../pages/CatGame";
 import catIcon from "../assets/cat.png";
 import shutdownIcon from "../assets/shut_down.png";
 import Shutdown from "../pages/Shutdown";
+import Timeline1998 from "../pages/Timeline1998";
+import calendarIcon from "../assets/calendar.png";
 
 export const desktopItems = [
   {
@@ -299,5 +301,20 @@ export const desktopItems = [
     zIndex: 1,
     statusBar: false,
     taskbar: false,
+  },
+  {
+    id: "calendar",
+    title: "1998 Timeline",
+    label: "Calendar",
+    icon: calendarIcon,
+    component: Timeline1998,
+    width: 470,
+    height: 680,
+    x: 500,
+    y: 50,
+    status: ["Welcome back to 1998."],
+    hiddenFromDesktop: true,
+    zIndex: 1,
+    backgroundColor: "#c0c0c0",
   },
 ];

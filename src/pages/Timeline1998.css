@@ -1,0 +1,129 @@
+.timeline-1998 {
+  display: flex;
+  flex-direction: column;
+  font-family: "MS Sans Serif", Arial, sans-serif;
+
+  gap: 2px;
+}
+
+.timeline-intro {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}
+
+.calendar-icon {
+  align-items: center;
+  width: 58px;
+  height: 58px;
+}
+
+.timeline-content {
+  display: flex;
+  height: 100%;
+}
+
+.timeline-line {
+  width: 2px;
+  height: 310px;
+  background-color: black;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  z-index: 2;
+}
+
+.dot.pink {
+  top: 0;
+  background: #e91e63;
+}
+
+.dot.blue {
+  top: 155px;
+  background: #0055dd;
+}
+
+.dot.green {
+  top: 310px;
+  background: #00b020;
+}
+
+.event-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.timeline-events {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-container:first-child {
+  margin-top: 50px;
+}
+
+.event-container {
+  display: flex;
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+
+.event-container:last-child {
+  margin-bottom: 50px;
+}
+
+.event-text h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.event-text p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.pink {
+  color: #e91e63;
+}
+
+.blue {
+  color: #0055dd;
+}
+
+.green {
+  color: #00b020;
+}
+
+.timeline-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  padding: 10px;
+  border: 2px solid;
+  border-color: #808080 white white #808080;
+  font-size: 15px;
+}
+
+.star-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 20px;
+}
