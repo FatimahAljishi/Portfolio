@@ -1,13 +1,16 @@
 import "./Taskbar.css";
 import startIcon from "../../assets/start.png";
 import audioIcon from "../../assets/audio.png";
+import audioMutedIcon from "../../assets/audio-muted.png";
 import calendarIcon from "../../assets/calendar.png";
 import StartMenu from "../StartMenu/StartMenu";
 import { useState, useRef, useEffect } from "react";
+import { useSound } from "../../context/SoundContext.jsx";
 
 function Taskbar({ openWindows, desktopItems, onTaskbarClick, openWindow }) {
   const [showStartMenu, setShowStartMenu] = useState(false);
   const startMenuRef = useRef(null);
+  const { muted, setMuted } = useSound();
   useEffect(() => {
     function handleClick(event) {
       if (
@@ -70,8 +73,16 @@ function Taskbar({ openWindows, desktopItems, onTaskbarClick, openWindow }) {
 
       <div className="side-box">
         <div className="taskbar-icons">
-          <img className="calendar-icon" src={calendarIcon} alt="Calendar" />
-          <img className="audio-icon" src={audioIcon} alt="Audio" />
+          <button>
+            <img className="calendar-icon" src={calendarIcon} alt="Calendar" />
+          </button>
+          <button onClick={() => setMuted(!muted)}>
+            {muted ? (
+              <img className="audio-icon" src={audioMutedIcon} alt="Audio" />
+            ) : (
+              <img className="audio-icon" src={audioIcon} alt="Audio" />
+            )}
+          </button>
         </div>
 
         {new Date().toLocaleTimeString([], {

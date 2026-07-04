@@ -2,11 +2,15 @@ import "./Desktop.css";
 import Taskbar from "../Taskbar/Taskbar";
 import Window from "../Window/Window";
 import DesktopIcon from "../DesktopIcon/DesktopIcon";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { desktopItems } from "../../data/desktopItems.jsx";
 import PDFWindow from "../Window/PDFWindow";
+import { useSound } from "../../context/SoundContext.jsx";
 
 export default function Desktop() {
+  const [selectedIcon, setSelectedIcon] = useState(null);
+  const openSound = useRef(new Audio("/sounds/windows-98-option.wav"));
+  const { playSound } = useSound();
   const [openWindows, setOpenWindows] = useState([
     {
       id: "welcome",
@@ -103,7 +107,7 @@ export default function Desktop() {
   }
 
   return (
-    <div className="wallpaper">
+    <div className="wallpaper" onClick={() => setSelectedIcon(null)}>
       <div className="desktop-icons">
         {desktopItems
           .filter((item) => !item.hiddenFromDesktop)
@@ -112,7 +116,12 @@ export default function Desktop() {
               key={item.id}
               icon={item.icon}
               label={item.label}
-              onDoubleClick={() => openWindow(item.id)}
+              selected={selectedIcon === item.id}
+              onClick={() => setSelectedIcon(item.id)}
+              onDoubleClick={() => {
+                playSound(openSound.current);
+                openWindow(item.id);
+              }}
             />
           ))}
       </div>

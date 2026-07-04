@@ -2,8 +2,14 @@ import FolderBody from "../components/FolderBody/FolderBody";
 import folderOpenIcon from "../assets/folder-open.png";
 import { skills } from "../data/skills.jsx";
 import "./Skills.css";
+import DesktopIcon from "../components/DesktopIcon/DesktopIcon";
+import { useState, useRef } from "react";
+import { useSound } from "../context/SoundContext.jsx";
 
 export default function Skills({ openWindow }) {
+  const [selectedIcon, setSelectedIcon] = useState(null);
+  const openSound = useRef(new Audio("/sounds/windows-98-option.wav"));
+  const { playSound } = useSound();
   return (
     <FolderBody
       icon={folderOpenIcon}
@@ -12,18 +18,17 @@ export default function Skills({ openWindow }) {
     >
       <div className="skills-window">
         {skills.map((skill) => (
-          <button
+          <DesktopIcon
             key={skill.id}
-            className="skill-icon"
-            onDoubleClick={() => openWindow(skill.id)}
-          >
-            <img
-              src={skill.icon}
-              className="skill-icon-image"
-              alt={skill.label}
-            />
-            <span className="skill-icon-label">{skill.label}</span>
-          </button>
+            icon={skill.icon}
+            label={skill.label}
+            selected={selectedIcon === skill.id}
+            onClick={() => setSelectedIcon(skill.id)}
+            onDoubleClick={() => {
+              playSound(openSound.current);
+              openWindow(skill.id);
+            }}
+          />
         ))}
       </div>
     </FolderBody>

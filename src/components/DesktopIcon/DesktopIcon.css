@@ -17,3 +17,8 @@
   width: 32px;
   height: 32px;
 }
+
+.desktop-icon.selected span {
+  background: #000080;
+  color: white;
+}

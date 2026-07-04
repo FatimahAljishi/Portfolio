@@ -118,3 +118,17 @@
   display: flex;
   gap: 4px;
 }
+
+.taskbar-icons button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.calendar-icon,
+.audio-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
