@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Contact.css";
+import githubIcon from "../assets/github.png";
+import linkedinIcon from "../assets/linkedin.png";
+import contactIcon from "../assets/search_web.png";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -124,6 +127,39 @@ export default function Contact() {
 
         {status && <div className="contact-status">{status}</div>}
       </form>
+      <div className="contact-info">
+        <div className="contact-info-label">
+          <img className="contact-icon" src={contactIcon} /> Find me online:
+        </div>
+        <div className="contact-buttons">
+          <button
+            onClick={() =>
+              window.open(
+                "https://github.com/FatimahAljishi",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
+          >
+            <div className="contact-button-content">
+              <img className="contact-icon" src={githubIcon} /> GitHub
+            </div>
+          </button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/fatimah-aljishi/",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
+          >
+            <div className="contact-button-content">
+              <img className="contact-icon" src={linkedinIcon} /> LinkedIn
+            </div>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

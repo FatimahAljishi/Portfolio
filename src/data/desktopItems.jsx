@@ -129,10 +129,10 @@ export const desktopItems = [
     icon: envelopeIcon,
     title: "Contact Me",
     component: Contact,
-    x: 360,
-    y: 80,
+    x: 340,
+    y: 30,
     width: 800,
-    height: 600,
+    height: 700,
     zIndex: 1,
   },
   {
