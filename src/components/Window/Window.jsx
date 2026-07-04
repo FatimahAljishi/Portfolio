@@ -17,6 +17,7 @@ export default function Window({
   height,
   maximized,
   backgroundColor,
+  statusBar = true,
 }) {
   const availableWidth = "100vw";
   const availableHeight = "calc(100vh - 28px)";
@@ -88,13 +89,15 @@ export default function Window({
         {" "}
         <div className="window-body-scroll">{children}</div>
       </div>
-      <div className="window-footer">
-        {[0, 1, 2].map((index) => (
-          <div className="status-box" key={index}>
-            {footerItems[index] || ""}
-          </div>
-        ))}
-      </div>
+      {statusBar && (
+        <div className="window-footer">
+          {[0, 1, 2].map((index) => (
+            <div className="status-box" key={index}>
+              {footerItems[index] || ""}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

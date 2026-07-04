@@ -14,7 +14,13 @@
 .title-bar {
   display: flex;
   height: 24px;
-  background: #010885;
+  background: linear-gradient(
+    to right,
+    #000080 0%,
+    #0a2aa6 30%,
+    #2b63d9 70%,
+    #6ea8ff 100%
+  );
   align-items: center;
   justify-content: space-between;
 }

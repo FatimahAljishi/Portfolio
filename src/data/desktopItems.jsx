@@ -30,6 +30,8 @@ import Education from "../pages/Education";
 import educationIcon from "../assets/education.png";
 import CatGame from "../pages/CatGame";
 import catIcon from "../assets/cat.png";
+import shutdownIcon from "../assets/shut_down.png";
+import Shutdown from "../pages/Shutdown";
 
 export const desktopItems = [
   {
@@ -283,5 +285,19 @@ export const desktopItems = [
     height: 430,
     x: 450,
     y: 120,
+  },
+  {
+    id: "shutdown",
+    title: "Shutting Down...",
+    icon: shutdownIcon,
+    component: Shutdown,
+    x: 0,
+    y: 0,
+    width: 3000,
+    height: 3000,
+    hiddenFromDesktop: true,
+    zIndex: 1,
+    statusBar: false,
+    taskbar: false,
   },
 ];

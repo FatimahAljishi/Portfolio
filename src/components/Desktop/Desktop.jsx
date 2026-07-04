@@ -142,6 +142,7 @@ export default function Desktop() {
             width={item.width}
             maximized={window.maximized}
             backgroundColor={item.backgroundColor}
+            statusBar={item.statusBar}
           >
             <ActiveComponent openWindow={openWindow} {...item.componentProps} />
           </Window>
@@ -173,6 +174,7 @@ export default function Desktop() {
         openWindows={openWindows}
         desktopItems={desktopItems}
         onTaskbarClick={toggleMinimize}
+        openWindow={openWindow}
       />
     </div>
   );

@@ -39,6 +39,13 @@
   border-bottom: 2px solid black;
 }
 
+.start-button:active {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
 .start-icon {
   width: 14px;
   height: 14px;
