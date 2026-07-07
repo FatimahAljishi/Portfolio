@@ -121,7 +121,7 @@ export const projects = [
       },
     ],
     github: "https://github.com/FatimahAljishi/resume-evaluator.git",
-    liveDemo: "#",
+    liveDemo: "https://resume-evaluator-by-fatimah.vercel.app/",
     liveDemoIcon: resumeEvaluatorLiveDemoIcon,
     themeClass: "resume-evaluator-theme",
   },
