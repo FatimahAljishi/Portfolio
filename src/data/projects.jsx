@@ -77,7 +77,7 @@ export const projects = [
       },
     ],
     github: "https://github.com/FatimahAljishi/AgroMind.git",
-    liveDemo: "http://98.80.119.7:5173/",
+    liveDemo: "https://agromind-by-fatimah.vercel.app/",
     liveDemoIcon: liveDemoIcon,
     themeClass: "agromind-theme",
   },
