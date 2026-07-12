@@ -115,6 +115,7 @@ export default function Resume() {
               Python Software Development Bootcamp — Saudi Digital Academy /
               WeCloud Data
             </span>
+            <span> (Jun 2026)</span>
             <p>
               6-week project-based software engineering bootcamp. Built a
               full-stack web application using React, FastAPI, and PostgreSQL,
@@ -124,6 +125,7 @@ export default function Resume() {
             <span className="position-title">
               Meta Back-End Developer Professional Certificate — Coursera / Meta
             </span>
+            <span> (Apr 2026)</span>
             <p>
               Courses: Python, Django, REST APIs, Databases, Version Control,
               Full-Stack Development.
