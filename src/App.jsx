@@ -6,7 +6,12 @@ import computerIcon from "./assets/computer.png";
 import { Analytics } from "@vercel/analytics/react";
 
 function App() {
-  return <Desktop />;
+  return (
+    <>
+      <Analytics />
+      <Desktop />
+    </>
+  );
 }
 
 export default App;
