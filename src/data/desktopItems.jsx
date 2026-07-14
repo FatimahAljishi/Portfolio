@@ -275,6 +275,28 @@ export const desktopItems = [
     height: 500,
     hiddenFromDesktop: true,
     pdfWindow: true,
+    certificateLink:
+      "/Fatimah_Aljishi_python_software_development_bootcamp_certificate.pdf",
+    zIndex: 1,
+  },
+  {
+    id: "pcep",
+    label: "PCEP™ – Certified Entry-Level Python Programmer",
+    icon: certificateIcon,
+    title: "PCEP™ – Certified Entry-Level Python Programmer",
+    component: CertificateDetails,
+    componentProps: {
+      certificate: certificates.find(
+        (certificate) => certificate.id === "pcep",
+      ),
+    },
+    x: 350,
+    y: 150,
+    width: 800,
+    height: 450,
+    hiddenFromDesktop: true,
+    pdfWindow: true,
+    certificateLink: "/Fatimah_Aljishi_PCEP.pdf",
     zIndex: 1,
   },
   {

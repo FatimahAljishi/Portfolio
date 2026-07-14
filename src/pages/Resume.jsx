@@ -112,6 +112,15 @@ export default function Resume() {
             <p>First Class Honours</p>
             <h2>CERTIFICATIONS</h2>
             <span className="position-title">
+              PCEP™ – Certified Entry-Level Python Programmer — Python Institute
+            </span>
+            <span> (Jul 2026)</span>
+            <p>
+              Validated foundational Python programming skills, including data
+              types, control flow, functions, modules, exceptions, and
+              object-oriented programming fundamentals.
+            </p>
+            <span className="position-title">
               Python Software Development Bootcamp — Saudi Digital Academy /
               WeCloud Data
             </span>

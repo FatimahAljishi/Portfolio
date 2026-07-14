@@ -1,6 +1,7 @@
 import metaBackendImage from "../assets/meta-backend.png";
 import SDEImage from "../assets/sde.png";
 import certificateIcon from "../assets/certificate.png";
+import pcepImage from "../assets/pcep.png";
 
 export const certificates = [
   {
@@ -20,5 +21,15 @@ export const certificates = [
     image: SDEImage,
     issuer: "Saudi Digital Academy / WeCloud Data",
     completionDate: "25-06-2026",
+  },
+  {
+    id: "pcep",
+    label: "PCEP™ – Certified Entry-Level Python Programmer",
+    icon: certificateIcon,
+    image: pcepImage,
+    issuer: "Python Institute",
+    completionDate: "13-07-2026",
+    credentialId: "2KdG.MCjO.MYgp",
+    verifyUrl: "verify.openedg.org",
   },
 ];
