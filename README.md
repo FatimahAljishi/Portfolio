@@ -26,7 +26,7 @@ Instead of a traditional scrolling website, visitors can explore the portfolio b
 
 ## 📸 Preview
 
-
+<img width="100%" alt="Portfolio Preview" src="./public/portfolio-demo.gif">
 
 ---
 
@@ -35,10 +35,6 @@ Instead of a traditional scrolling website, visitors can explore the portfolio b
 **Portfolio**
 
 > https://fatimah-aljishi-portfolio.vercel.app/
-
-```
-https://fatimah-aljishi-portfolio.vercel.app/
-```
 
 ---
 
