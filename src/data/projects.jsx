@@ -25,6 +25,9 @@ import jsIcon from "../assets/js.png";
 import viteIcon from "../assets/vite.png";
 import portfolioLiveDemoIcon from "../assets/portfolio-demo.png";
 import appIcon from "../assets/appwizard.png";
+import clerkIcon from "../assets/clerk.png";
+import moyasarIcon from "../assets/moyasar.png";
+import resetHeader from "../assets/reset.png";
 
 export const projects = [
   {
@@ -171,5 +174,58 @@ export const projects = [
     liveDemo: "#",
     liveDemoIcon: portfolioLiveDemoIcon,
     themeClass: "portfolio-theme",
+  },
+  {
+    id: "reset",
+    label: "Reset.exe",
+    icon: appIcon,
+    fileName: "Reset.exe",
+    header: resetHeader,
+    title: "Reset",
+    subtitle: "Personal Training & Fitness Platform",
+    type: "Client Project | Freelance Full-Stack Development",
+    overviewIcon: agromindOverviewIcon,
+    description:
+      "Developed a full-stack web application for a personal trainer, enabling clients to purchase training services, book sessions, complete secure online payments, and manage their fitness journey through an intuitive bilingual platform. Designed and developed both the frontend and backend with a modern, responsive user experience.",
+    techStackIcon: agromindTechStackIcon,
+    techStack: [
+      { name: "React", icon: reactIcon },
+      { name: "FastAPI", icon: fastapiIcon },
+      { name: "Python", icon: pythonIcon },
+      { name: "PostgreSQL", icon: postgresqlIcon },
+      { name: "Clerk", icon: clerkIcon },
+      { name: "Moyasar", icon: moyasarIcon },
+    ],
+    featuresIcon: agromindFeaturesIcon,
+    features: [
+      {
+        title: "Training Services –",
+        text: "Browse and purchase Personal Training, Small Group Training, and Online Coaching services with flexible session packages.",
+      },
+      {
+        title: "Secure Authentication –",
+        text: "Register and log in securely using Clerk authentication with role-based access for clients and trainers.",
+      },
+      {
+        title: "Online Payments –",
+        text: "Complete secure online payments through Moyasar with automatic payment verification and order processing.",
+      },
+      {
+        title: "Shopping Cart & Checkout –",
+        text: "Add training services to a shopping cart and complete purchases through a streamlined checkout experience.",
+      },
+      {
+        title: "Trainer Dashboard –",
+        text: "Manage customer orders, track payment statuses, search and filter bookings, and monitor active clients from an administrative dashboard.",
+      },
+      {
+        title: "Bilingual Experience –",
+        text: "Switch seamlessly between English and Arabic with responsive design across desktop and mobile devices.",
+      },
+    ],
+    github: "https://github.com/FatimahAljishi/Reset.git",
+    liveDemo: "https://reset-by-zainab.vercel.app/",
+    liveDemoIcon: liveDemoIcon,
+    themeClass: "agromind-theme",
   },
 ];

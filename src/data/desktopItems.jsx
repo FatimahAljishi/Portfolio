@@ -200,6 +200,22 @@ export const desktopItems = [
     y: 0,
   },
   {
+    id: "reset",
+    label: "Reset.exe",
+    icon: appIcon,
+    title: "Reset",
+    component: ProjectDetails,
+    componentProps: {
+      project: projects.find((project) => project.id === "reset"),
+    },
+    hiddenFromDesktop: true,
+    width: 3000,
+    height: 3000,
+    zIndex: 1,
+    x: 0,
+    y: 0,
+  },
+  {
     id: "technicalSkills",
     label: "Technical Skills",
     icon: skillIcon,
