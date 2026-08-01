@@ -216,6 +216,22 @@ export const desktopItems = [
     y: 0,
   },
   {
+    id: "gleasonai",
+    label: "GleasonAI.exe",
+    icon: appIcon,
+    title: "GleasonAI",
+    component: ProjectDetails,
+    componentProps: {
+      project: projects.find((project) => project.id === "gleasonai"),
+    },
+    hiddenFromDesktop: true,
+    width: 3000,
+    height: 3000,
+    zIndex: 1,
+    x: 0,
+    y: 0,
+  },
+  {
     id: "technicalSkills",
     label: "Technical Skills",
     icon: skillIcon,

@@ -28,6 +28,10 @@ import appIcon from "../assets/appwizard.png";
 import clerkIcon from "../assets/clerk.png";
 import moyasarIcon from "../assets/moyasar.png";
 import resetHeader from "../assets/reset.png";
+import gleasonHeader from "../assets/gleasonai.png";
+import pytorchIcon from "../assets/pytorch.png";
+import numpyIcon from "../assets/numpy.png";
+import huggingfaceIcon from "../assets/huggingface.png";
 
 export const projects = [
   {
@@ -227,5 +231,77 @@ export const projects = [
     liveDemo: "https://reset-by-zainab.vercel.app/",
     liveDemoIcon: liveDemoIcon,
     themeClass: "agromind-theme",
+  },
+  {
+    id: "gleasonai",
+    label: "GleasonAI.exe",
+    icon: appIcon,
+    fileName: "GleasonAI.exe",
+
+    header: gleasonHeader,
+
+    title: "GleasonAI",
+
+    subtitle: "AI-Assisted Prostate Cancer Grading Platform",
+
+    type: "Master's Dissertation | University of Edinburgh",
+
+    overviewIcon: resumeEvaluatorOverviewIcon,
+
+    description:
+      "Developed a full-stack web application that performs AI-assisted prostate cancer grading from histopathology tissue images. Users can upload tissue images to receive a semantic segmentation mask highlighting Gleason patterns together with an automatically computed Gleason Score. Built as part of my MSc Computer Science dissertation at the University of Edinburgh.",
+
+    techStackIcon: resumeEvaluatorTechStackIcon,
+
+    techStack: [
+      { name: "React", icon: reactIcon },
+      { name: "FastAPI", icon: fastapiIcon },
+      { name: "Python", icon: pythonIcon },
+      { name: "PyTorch", icon: pytorchIcon },
+      { name: "NumPy", icon: numpyIcon },
+      { name: "Hugging Face", icon: huggingfaceIcon },
+    ],
+
+    featuresIcon: resumeEvaluatorFeaturesIcon,
+
+    features: [
+      {
+        title: "AI Tissue Segmentation –",
+        text: "Upload a prostate histopathology image to generate a pixel-wise semantic segmentation mask using a U-Net deep learning model with an EfficientNet-B4 encoder.",
+      },
+
+      {
+        title: "Automatic Gleason Scoring –",
+        text: "Identifies the two most predominant Gleason patterns from the predicted segmentation mask and computes the final Gleason Score.",
+      },
+
+      {
+        title: "Interactive Visualization –",
+        text: "Displays the original tissue image alongside the predicted segmentation mask with a color legend for each tissue class.",
+      },
+
+      {
+        title: "Modern Web Application –",
+        text: "Responsive React frontend with drag-and-drop image uploads, sample images, and FastAPI backend for real-time inference.",
+      },
+
+      {
+        title: "Optimized Inference Pipeline –",
+        text: "Processes large tissue images using overlapping image patches with Gaussian-weighted stitching to produce seamless full-image predictions.",
+      },
+
+      {
+        title: "Research Prototype –",
+        text: "Demonstrates the practical deployment of a deep learning model developed during my MSc dissertation, making AI-assisted histopathology grading accessible through a web interface.",
+      },
+    ],
+
+    github: "https://github.com/FatimahAljishi/GleasonAI",
+
+    liveDemo: "https://gleason-ai.vercel.app/",
+
+    liveDemoIcon: resumeEvaluatorLiveDemoIcon,
+
+    themeClass: "resume-evaluator-theme",
   },
 ];
